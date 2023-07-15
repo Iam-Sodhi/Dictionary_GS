@@ -1,0 +1,20 @@
+<%- include("header"); -%>
+<p id="result">You searched for word:<b> <%=searchWord%></b><br>
+     Here are the meanings 
+    <ul>
+        <%Words.forEach(function(word){   %>
+            <li><%=word%></li>
+         <%})%>
+       <!-- <%  for(let i=0;i<Words.length;i++){   %>
+            <li> <%= Words[i].assoc %></li>
+     <%    }    %> -->
+
+    </ul>
+Here are the associations: <ul>
+    <%WordsE.forEach(function(worde){   %>
+        <li> <%=worde %>
+        </li>
+     <%})%>
+</ul></p>
+
+<%- include("footer"); -%>
